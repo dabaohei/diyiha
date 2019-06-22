@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <style>
+        /*选择器优先级
+          style 内联样式优先最高   1000
+          # id id选择器   100
+          . class 类选择器 伪类选择器 10
+          div 元素选择器 伪元素选择器 1
+        */
+        /*优先级相同 写在后边的会覆盖 写在前面的*/
+        .div1{
+            /*背景颜色*/
+            background-color: aqua;
+            /* 背景图片  通过url()引入图片地址 */
+            background-image: url("https://img.alicdn.com/imgextra/i1/1917047079/TB27ffoXxnaK1RjSZFtXXbC2VXa_!!1917047079.jpg_430x430q90.jpg");
+            /* 背景图片重复  repeat 和 no-repeat两个值   */
+            background-repeat: no-repeat;
+            /* 背景图片位置 第一个值水平方向（正值右移）  第二个值垂直方向（正值下移）   */
+            background-position: 0px 100px;
+             /* 合并写法  */
+            /* background: red url(../images/bbb.jpg) no-repeat -150px -100px;
+            background-color: green;*/
+            height:500px;
+            color:blueviolet;
+        }
+        .div2{
+            /*宽高*/
+            width:200px;
+            height:100px;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-position: 120px 100px;
+            color:brown
+        }
+        .div3{
+            background: #00f;
+            color:#fff;
+            /* 首行缩进  */
+            text-indent: 20px;
+            /* 文本水平对齐方式 left center right */
+            text-align: center;
+            height:100px;
+            /* 单行文本垂直居中的方式  line-height = height */
+            line-height: 100px;
+        }
+        a{
+            /* 文本装饰  
+                none 去掉下划线 
+                underline  下划线
+                overline   上划线
+                line-through   贯穿线
+            */
+            text-decoration: none;
+        }
+        /* #a{
+
+        } */
+    </style>
+<body style="height:2000px;">
+        <div class="div1" id="a">
+            哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111
+        </div>
+        <div class="div2">男神</div>
+        <div class="div3">
+            我是div
+        </div>
+        <a href="#">aaaaa</a>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--内部样式-->
+    <style>
+        /*标签选择器*/
+        div{
+            color:red;
+            background:pink;
+        }
+        /*id选择器*/
+        #aa{
+            color:aqua
+        }
+        /*class选择器  一类*/
+        .list{
+            color:blueviolet
+        }
+        /*后代选择器*/
+        /*.list .test{}*/
+        .parents .child{
+            color:darkblue
+        }
+        /*伪类选择器*/
+        a:hover{
+            color:crimson
+        }
+        /**/
+        .cc + .dd{
+            color:darkorange
+        }
+        /*群组选择器*/
+        .cc,.dd,.ee{
+
+        }
+        /*伪元素选择器*/
+        .dd::before{
+            content:'haha';
+            color:darkviolet
+        }
+    </style>
+    <link rel="stylesheet" href="">
+
+</head>
+    <body>
+        <div>
+             wqsgh
+        </div>
+        <div id="aa">
+            sgh
+         </div>
+         <div>
+            wq
+         </div>
+         <p>
+             hjgsdgj
+         </p>
+         <ul>
+             <li class="list">111</li>
+             <li class="list">222</li>
+             <li id="bb">333</li>
+         </ul>
+         <div class="parents">  
+            123
+            <div>
+                456
+                <div class="child">
+                    789
+                </div>
+            </div>
+         </div>
+         <a href="http://www.baidu.com">百度</a>
+         <div class="cc">ccccc</div>
+         <div class="dd">ddddd</div>
+         <div class="dd">ddddd</div>
+         <div class="ee">eeeee</div>
+
+    
+    </body>
+</html>
