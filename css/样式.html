@@ -5,38 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-</head>
     <style>
-        /*选择器优先级
-          style 内联样式优先最高   1000
-          # id id选择器   100
-          . class 类选择器 伪类选择器 10
-          div 元素选择器 伪元素选择器 1
-        */
-        /*优先级相同 写在后边的会覆盖 写在前面的*/
+        body{
+            /* font-size:50px; */
+        }
+        /* 雪碧图  css精灵 */
         .div1{
-            /*背景颜色*/
-            background-color: aqua;
+            /* background: red; */
+            /* 背景颜色 */
+            background-color: red;
             /* 背景图片  通过url()引入图片地址 */
-            background-image: url("https://img.alicdn.com/imgextra/i1/1917047079/TB27ffoXxnaK1RjSZFtXXbC2VXa_!!1917047079.jpg_430x430q90.jpg");
+            background-image: url(../images/bbb.jpg);
             /* 背景图片重复  repeat 和 no-repeat两个值   */
             background-repeat: no-repeat;
-            /* 背景图片位置 第一个值水平方向（正值右移）  第二个值垂直方向（正值下移）   */
-            background-position: 0px 100px;
-             /* 合并写法  */
-            /* background: red url(../images/bbb.jpg) no-repeat -150px -100px;
-            background-color: green;*/
+             /* 背景图片位置 第一个值水平方向（正值右移）  第二个值垂直方向（正值下移）   */
+            background-position: -150px -100px; 
+            /* 合并写法  */
+            background: red url(../images/bbb.jpg) no-repeat -150px -100px;
+            background-color: green;
             height:500px;
-            color:blueviolet;
         }
         .div2{
-            /*宽高*/
-            width:200px;
-            height:100px;
-            background-image: url("");
+            /* 宽  高  */
+            width: 150px;
+            height: 150px;
+            background-image: url(../images/bbb.jpg);
             background-repeat: no-repeat;
-            background-position: 120px 100px;
-            color:brown
+            background-position:-225px -225px;
         }
         .div3{
             background: #00f;
@@ -57,10 +52,8 @@
                 line-through   贯穿线
             */
             text-decoration: none;
+            
         }
-        /* #a{
-
-        } */
         a:link {color:#FF0000;}		/* 未被访问的链接 */
         a:visited {color:#00FF00;}	/* 已被访问的链接 */
         a:hover {color:#FF00FF;}	/* 鼠标指针移动到链接上 */
@@ -88,22 +81,25 @@
             cursor: pointer;
         }
     </style>
+</head>
 <body style="height:2000px;">
-        <div class="div1" id="a">
-            哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111
-        </div>
-        <div class="div2">神</div>
-        <div class="div3">
-            我是div
-        </div>
-        <a href="#">aaaaa</a>
-        <div class="txt">
-            男神啊
-        </div>
-        <ul>
-            <li>111</li>
-            <li>222</li>
-        </ul>
-    
+    <div class="div1" id="a">
+        哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111哈哈哈哈哈哈哈哈111111111
+    </div>
+    <div class="div2"></div>
+    <div class="div3">
+        我是div
+    </div>
+    <a href="#">aaaaa</a>
+
+
+    <div class="txt">
+        哈哈哈哈哈哈哈哈
+    </div>
+
+    <ul>
+        <li>111</li>
+        <li>222</li>
+    </ul>
 </body>
 </html>
